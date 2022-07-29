@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="C:\Users\devan\Desktop\GravityInfra\css_files\homepage.css">
+<title>Gravity Infra Company</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="C:\Users\devan\Desktop\GravityInfra\webpages\homepage.html"><div class="col-md-1"> GravityInfra</div></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="C:\Users\devan\Desktop\GravityInfra\webpages\homepage.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\devan\Desktop\GravityInfra\webpages\our_work.html">The Work</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="C:\Users\devan\Desktop\GravityInfra\webpages\our_projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="C:\Users\devan\Desktop\GravityInfra\webpages\Statistics.html">Statistics</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container1">
+    <div class="row p-3" id="pg_title">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 "><div class="p-3 border bg-dark">Gravity Infra Company</div></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-6 col-lg-2 order-md-2">  </div>
+        <div class="col-sm-8 col-md-6 col-lg-8 order-md-1"></div>
+    </div>
+</div>
+
+  <div class="slideshow jumbotron">
+    <div class="col-md-2"></div>
+    <div class="container">
+        <a href="our_work.html">
+        <img class="mySlides" src="C:\Users\devan\Desktop\GravityInfra\pictures\our_work.jpg">       
+        <div class="top">Work</div>
+        </a>
+    </div>
+    <div class="container">
+        <a href="our_projects.html">
+        <img class="mySlides" src="C:\Users\devan\Desktop\GravityInfra\pictures\our_projects.jpg">       
+        <div class="bottom">Projects</div>
+        </a>
+    </div>
+    <div class="container">
+        <a href="statistics.html">
+        <img class="mySlides" src="C:\Users\devan\Desktop\GravityInfra\pictures\stats.jpg">       
+        <div class="right">Statistics</div>
+        </a>
+    </div>
+    
+    <div class="container">
+        <a href="accounts.html">
+        <img class="mySlides" src="C:\Users\devan\Desktop\GravityInfra\pictures\accounts.jpg">       
+        <div class="centered">Accounts</div>
+        </a>
+    </div>        
+    <div class="col-md-2"></div>
+</div>
+
+</div>
+
+
+
+<br><br>
+<div class="row">
+    <div class="col-sm-6 ">   </div>
+    <div class="col-sm-4 "><button class="login" onclick="window.location.href = 'login.html';">Log In</button></div>
+    <div class="col-sm-4 ">   </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 ">   </div>
+    <div class="col-sm-4 "></div>
+    <div class="col-sm-4 ">   </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 ">  <br> </div>
+    <div class="col-sm-4 "><br></div>
+    <div class="col-sm-4 "> <br>  </div>
+</div>
+</div>
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("container");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";  
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+x[myIndex-1].style.display = "block";  
+setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
