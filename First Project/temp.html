@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gravity Infra Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        img {
+            width: 100%;
+        }
+        
+        #pg_title {
+            color: azure;
+            text-decoration-color: black;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        @keyframes example {
+            from {
+                background-color: hsla(281, 100%, 50%, 0.726);
+            }
+            to {
+                background-color: rgba(107, 247, 205, 0.925);
+            }
+        }
+        
+        body {
+            /*background-image: url("forest.jpg");*/
+            animation-name: example;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row p-3" id="pg_title">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 ">
+                <div class="p-3 border bg-dark">Gravity Infra Company</div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-6 col-lg-2 order-md-2"> </div>
+            <div class="col-sm-8 col-md-6 col-lg-8 order-md-1"></div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="slideshow ">
+                <div class="col-md-2"></div>
+                <div class="w3-display-container mySlides">
+                    <img class="mySlides w3-animate-fading" src="our_work.jpg">
+                    <div class="w3-display-middle w3-container w3-padding-16 w3-black">Our Work
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img class="mySlides" src="our_projects.jpg">
+                    <div class="w3-display-middle w3-container w3-padding-16 w3-black">Our Projects
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img class="mySlides" src="stats.jpg">
+                    <div class="w3-display-middle w3-container w3-padding-16 w3-black">Our Statistics
+                    </div>
+                </div>
+
+
+                <div class="w3-display-container mySlides">
+                    <img class="mySlides" src="technology.jpg">
+                    <div class="w3-display-middle w3-container w3-padding-16 w3-black">Taking Techonology a step ahead
+                    </div>
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img class="mySlides" src="accounts.jpg">
+                    <div class="w3-display-middle w3-container w3-padding-16 w3-black">Accounts and Money
+                    </div>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+
+        </div>
+
+
+
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4 offset-2">column 1 </div>
+            <div class="col-sm-6 ">column 2</div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+.login
+{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.centered 
+{
+    font-size: 70px;
+    color: azure;
+    font-weight: 400;
+    text-shadow: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top
+{
+    font-size: 70px;
+    color: azure;
+    font-weight: 400;
+    text-shadow: black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom 
+{
+    font-size: 70px;
+    color: azure;
+    font-weight: 400;
+    text-shadow: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.right
+{
+    font-size: 70px;
+    color: azure;
+    font-weight: 400;
+    text-shadow: black;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.container
+{
+    position: relative;
+}
+img
+{
+    width: 100%;
+
+}
+#pg_title
+{
+    color: azure;
+    text-decoration-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@keyframes example 
+    {
+        from {background-color: hsla(180, 23%, 78%, 0.863);}
+        to {background-color: rgba(197, 204, 199, 0.192);}
+    }
+    body
+    {
+        /*background-image: url("forest.jpg");*/
+        animation-name: example;
+        animation-duration: 7s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        
+    }
